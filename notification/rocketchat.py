@@ -113,11 +113,13 @@ EXAMPLES = """
   local_action:
     module: rocketchat
     token: thetoken/generatedby/rocketchat
+    domain: chat.example.com
     msg: "{{ inventory_hostname }} completed"
 
 - name: Send notification message via Rocket Chat all options
   local_action:
     module: rocketchat
+    domain: chat.example.com
     token: thetoken/generatedby/rocketchat
     msg: "{{ inventory_hostname }} completed"
     channel: "#ansible"
@@ -128,6 +130,7 @@ EXAMPLES = """
 - name: insert a color bar in front of the message for visibility purposes and use the default webhook icon and name configured in rocketchat
   rocketchat:
     token: thetoken/generatedby/rocketchat
+    domain: chat.example.com
     msg: "{{ inventory_hostname }} is alive!"
     color: good
     username: ""
@@ -136,6 +139,7 @@ EXAMPLES = """
 - name: Use the attachments API
   rocketchat:
     token: thetoken/generatedby/rocketchat
+    domain: chat.example.com
     attachments:
       - text: "Display my system load on host A and B"
         color: "#ff00dd"
