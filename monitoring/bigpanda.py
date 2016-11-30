@@ -96,7 +96,7 @@ EXAMPLES = '''
     component: myapp
     version: 1.3
     token: '{{ bigpanda_token }}'
-    hosts: '{{ansible_hostname}}'
+    hosts: '{{ ansible_hostname }}'
     state: started
   delegate_to: localhost
   register: deployment
