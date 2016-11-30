@@ -75,7 +75,10 @@ options:
 
 EXAMPLES = '''
 # Install a package from an already copied file
-- svr4pkg: name=CSWcommon src=/tmp/cswpkgs.pkg state=present
+- svr4pkg:
+    name: CSWcommon
+    src: /tmp/cswpkgs.pkg
+    state: present
 
 # Install a package directly from an http site
 - svr4pkg:
