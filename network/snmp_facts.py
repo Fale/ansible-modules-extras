@@ -74,7 +74,8 @@ EXAMPLES = '''
 # Gather facts with SNMP version 2
 - snmp_facts:
     host: '{{ inventory_hostname }}'
-    version: 2c community=public
+    version: 2c
+    community: public
   delegate_to: local
 
 # Gather facts using SNMP version 3

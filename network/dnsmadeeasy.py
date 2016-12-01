@@ -95,7 +95,8 @@ EXAMPLES = '''
 - dnsmadeeasy:
     account_key: key
     account_secret: secret
-    domain: my.com state=present
+    domain: my.com
+    state: present
   register: response
   
 # create / ensure the presence of a record
