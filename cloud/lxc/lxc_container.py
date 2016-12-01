@@ -269,7 +269,7 @@ EXAMPLES = """
 
 - name: Debug info on container "test-container-lvm"
   debug:
-    var: '{{ lvm_container_info }}'
+    var: lvm_container_info
 
 - name: Run a command in a container and ensure its in a "stopped" state.
   lxc_container:
@@ -336,7 +336,7 @@ EXAMPLES = """
 
 - name: debug info on container "test-container"
   debug:
-    var: '{{ clone_container_info }}'
+    var: clone_container_info
 
 - name: Clone a container using snapshot
   lxc_container:
