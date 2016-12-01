@@ -136,7 +136,9 @@ EXAMPLES = '''
 - zabbix_maintenance:
     name: Update of www1
     host_name: www1.example.com
-    host_groups: Office,Dev
+    host_groups:
+      - Office
+      - Dev
     state: present
     server_url: 'https://monitoring.example.com'
     login_user: ansible
@@ -146,7 +148,9 @@ EXAMPLES = '''
 # for hosts www1.example.com and db1.example.com and without data collection.
 - zabbix_maintenance:
     name: update
-    host_names: www1.example.com,db1.example.com
+    host_names:
+      - www1.example.com
+      - db1.example.com
     state: present
     collect_data: false
     server_url: 'https://monitoring.example.com'
