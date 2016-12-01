@@ -91,7 +91,7 @@ EXAMPLES = '''
 - elasticsearch_plugin:
     state: present
     name: com.github.kzwang/elasticsearch-image
-    version: 1.2.0
+    version: '1.2.0'
 
 # Uninstall Elasticsearch head plugin
 - elasticsearch_plugin:

@@ -127,7 +127,7 @@ EXAMPLES = '''
 # OR the installed version is older than version 1.0
 - cpanm:
     name: Dancer
-    version: 1.0
+    version: '1.0'
 '''
 
 def _is_package_installed(module, name, locallib, cpanm, version):

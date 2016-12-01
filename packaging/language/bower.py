@@ -74,7 +74,7 @@ EXAMPLES = '''
 - name: Install "bootstrap" bower package on version 3.1.1.
  bower:
     name: bootstrap
-    version: 3.1.1
+    version: '3.1.1'
 
 - name: Remove the "bootstrap" bower package.
   bower:

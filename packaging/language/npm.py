@@ -85,7 +85,7 @@ description: Install "coffee-script" node.js package.
 description: Install "coffee-script" node.js package on version 1.6.1.
 - npm:
     name: coffee-script
-    version: 1.6.1
+    version: '1.6.1'
     path: /app/location
 
 description: Install "coffee-script" node.js package globally.

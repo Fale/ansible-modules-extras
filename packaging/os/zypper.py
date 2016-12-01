@@ -163,7 +163,7 @@ EXAMPLES = '''
 
 # Install specific version (possible comparisons: <, >, <=, >=, =)
 - zypper:
-    name: docker>=1.10
+    name: 'docker>=1.10'
     state: installed
 '''
 

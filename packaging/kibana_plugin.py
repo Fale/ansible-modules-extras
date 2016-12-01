@@ -87,7 +87,7 @@ EXAMPLES = '''
 - kibana_plugin:
     state: present
     name: elasticsearch/marvel
-    version: 2.3.3
+    version: '2.3.3'
 
 # Uninstall Elasticsearch head plugin
 - kibana_plugin:
