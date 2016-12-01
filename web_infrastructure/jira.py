@@ -122,8 +122,8 @@ EXAMPLES = """
     username: '{{ user }}'
     password: '{{ pass }}'
     issue: '{{ issue.meta.key }}'
-    operation:comment
-    comment:A comment added by Ansible
+    operation: comment
+    comment: A comment added by Ansible
 
 # Assign an existing issue using edit
 - name: Assign an issue using free-form fields

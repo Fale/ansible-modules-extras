@@ -61,7 +61,7 @@ EXAMPLES = """
 - jboss:
     src: /tmp/hello-1.1-SNAPSHOT.war
     deployment: hello.war
-    state:present
+    state: present
 
 # Undeploy the hello world application
 - jboss:
