@@ -60,7 +60,7 @@ Simple Example:
       module: katello
       username: "admin"
       password: "admin"
-      server_url: "https://fakeserver.com"
+      server_url: https://fakeserver.com
       entity: "product"
       params:
         name: "Centos 7"
@@ -74,7 +74,7 @@ katello.yml
       module: katello
       username: "admin"
       password: "admin"
-      server_url: "https://fakeserver.com"
+      server_url: https://fakeserver.com
       entity: "{{ entity }}"
       params: "{{ params }}"
 
@@ -106,7 +106,7 @@ tasks.yml
       product: "Centos 7"
       organization: "Default Organization"
       content_type: "yum"
-      url: "http://mirror.centos.org/centos/7/os/x86_64/"
+      url: http://mirror.centos.org/centos/7/os/x86_64/
 
 - include: katello.yml
   vars:

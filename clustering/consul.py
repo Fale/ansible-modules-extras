@@ -177,7 +177,7 @@ EXAMPLES = '''
     consul:
       service_name: nginx
       service_port: 80
-      script: "curl http://localhost"
+      script: curl http://localhost
       interval: 60s
 
   - name: register nginx with an http check
@@ -185,7 +185,7 @@ EXAMPLES = '''
       service_name: nginx
       service_port: 80
       interval: 60s
-      http: "http://localhost:80/status"
+      http: http://localhost:80/status
 
   - name: register external service nginx available at 10.1.5.23
     consul:
@@ -219,7 +219,7 @@ EXAMPLES = '''
       check_id: nginx-check2
       service_id: nginx
       interval: 60s
-      http: "http://localhost:80/morestatus"
+      http: http://localhost:80/morestatus
 
 '''
 

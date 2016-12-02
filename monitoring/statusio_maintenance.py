@@ -64,7 +64,7 @@ options:
         description:
             - Status.io API URL. A private apiary can be used instead.
         required: false
-        default: "https://api.status.io"
+        default: https://api.status.io
     components:
         description:
             - The given name of your component (server name)

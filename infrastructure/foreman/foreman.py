@@ -58,7 +58,7 @@ EXAMPLES = '''
       module: foreman
       username: "admin"
       password: "admin"
-      server_url: "https://fakeserver.com"
+      server_url: https://fakeserver.com
       entity: "organization"
       params:
         name: "My Cool New Organization"

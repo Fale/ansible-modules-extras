@@ -54,7 +54,7 @@ options:
     description:
       - Optional URL to submit the notification to.
     required: false
-    default: "https://api.honeybadger.io/v1/deploys"
+    default: https://api.honeybadger.io/v1/deploys
   validate_certs:
     description:
       - If C(no), SSL certificates for the target url will not be validated. This should only be used
