@@ -67,7 +67,7 @@ EXAMPLES = '''
 # Install a package from a specific repository
 - pkgutil:
     name: CSWnrpe
-    site: 'ftp://myinternal.repo/opencsw/kiel'
+    site: ftp://myinternal.repo/opencsw/kiel
     state: latest
 '''
 

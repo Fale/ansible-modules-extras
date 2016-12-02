@@ -72,7 +72,7 @@ options:
     description:
       - API url if using a self-hosted hipchat server. For hipchat api version 2 use C(/v2) path in URI
     required: false
-    default: 'https://api.hipchat.com/v1'
+    default: https://api.hipchat.com/v1
     version_added: 1.6.0
 
 
@@ -87,7 +87,7 @@ EXAMPLES = '''
 
 # Use Hipchat API version 2
 - hipchat:
-    api: 'https://api.hipchat.com/v2/'
+    api: https://api.hipchat.com/v2/
     token: OAUTH2_TOKEN
     room: notify
     msg: Ansible task finished

@@ -70,12 +70,12 @@ EXAMPLES = '''
 # Install the overlay 'cvut' from the specified alternative list.
 - layman:
     name: cvut
-    list_url: 'http://raw.github.com/cvut/gentoo-overlay/master/overlay.xml'
+    list_url: http://raw.github.com/cvut/gentoo-overlay/master/overlay.xml
 
 # Update (sync) the overlay 'cvut', or install if not installed yet.
 - layman:
     name: cvut
-    list_url: 'http://raw.github.com/cvut/gentoo-overlay/master/overlay.xml'
+    list_url: http://raw.github.com/cvut/gentoo-overlay/master/overlay.xml
     state: updated
 
 # Update (sync) all of the installed overlays.

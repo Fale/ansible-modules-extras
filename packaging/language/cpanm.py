@@ -116,7 +116,7 @@ EXAMPLES = '''
 # install Dancer perl package from a specific mirror
 - cpanm:
     name: Dancer
-    mirror: 'http://cpan.cpantesters.org/'
+    mirror: http://cpan.cpantesters.org/
 
 # install Dancer perl package into the system root path
 - cpanm:

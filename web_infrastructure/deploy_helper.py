@@ -167,7 +167,7 @@ procedure to remove it during cleanup.
     path: /path/to/root
 - name: Clone the project to the new release folder
   git:
-    repo: 'git://foosball.example.org/path/to/repo.git'
+    repo: git://foosball.example.org/path/to/repo.git
     dest: '{{ deploy_helper.new_release_path }}'
     version: 'v1.1.1'
 - name: Add an unfinished file, to allow cleanup on successful finalize

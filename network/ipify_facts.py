@@ -32,7 +32,7 @@ options:
       - URL of the ipify.org API service.
       - C(?format=json) will be appended per default.
     required: false
-    default: 'https://api.ipify.org'
+    default: https://api.ipify.org
   timeout:
     description:
       - HTTP connection timeout in seconds.

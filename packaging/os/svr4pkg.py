@@ -83,7 +83,7 @@ EXAMPLES = '''
 # Install a package directly from an http site
 - svr4pkg:
     name: CSWpkgutil
-    src: 'http://get.opencsw.org/now'
+    src: http://get.opencsw.org/now
     state: present
     zone: current
 

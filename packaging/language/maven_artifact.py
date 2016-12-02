@@ -135,7 +135,7 @@ EXAMPLES = '''
 - maven_artifact:
     group_id: com.company
     artifact_id: library-name
-    repository_url: 'https://repo.company.com/maven'
+    repository_url: https://repo.company.com/maven
     username: user
     password: pass
     dest: /tmp/library-name-latest.jar
@@ -145,7 +145,7 @@ EXAMPLES = '''
     group_id: com.company
     artifact_id: web-app
     extension: war
-    repository_url: 'https://repo.company.com/maven'
+    repository_url: https://repo.company.com/maven
     dest: /var/lib/tomcat7/webapps/web-app.war
 '''
 

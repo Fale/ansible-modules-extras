@@ -72,7 +72,7 @@ EXAMPLES = '''
 
 - homebrew_tap:
     name: telemachus/brew
-    url: 'https://bitbucket.org/telemachus/brew'
+    url: https://bitbucket.org/telemachus/brew
 '''
 
 

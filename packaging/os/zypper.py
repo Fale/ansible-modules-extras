@@ -136,7 +136,7 @@ EXAMPLES = '''
 
 # Install the nginx rpm from a remote repo
 - zypper:
-    name: 'http://nginx.org/packages/sles/12/x86_64/RPMS/nginx-1.8.0-1.sles12.ngx.x86_64.rpm'
+    name: http://nginx.org/packages/sles/12/x86_64/RPMS/nginx-1.8.0-1.sles12.ngx.x86_64.rpm
     state: present
 
 # Install local rpm file

@@ -117,8 +117,8 @@ EXAMPLES = '''
   azure_rm_deployment:
     state: present
     resource_group_name: dev-ops-cle
-    template_link: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json'
-    parameters_link: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.parameters.json'
+    template_link: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.json
+    parameters_link: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-simple-linux/azuredeploy.parameters.json
 
 # Create or update a template deployment based on a uri to the template and parameters specified inline.
 # This deploys a VM with SSH support for a given public key, then stores the result in 'azure_vms'. The result is then
@@ -154,7 +154,7 @@ EXAMPLES = '''
             value: ansibleSshVm
           sshKeyData:
             value: YOUR_SSH_PUBLIC_KEY
-        template_link: 'https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-sshkey/azuredeploy.json'
+        template_link: https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vm-sshkey/azuredeploy.json
       register: azure
 
     - name: Add new instance to host group
@@ -182,7 +182,7 @@ EXAMPLES = '''
     resource_group_name: dev-ops-cle-webapp
     parameters:
       repoURL:
-        value: 'https://github.com/devigned/az-roadshow-oss.git'
+        value: https://github.com/devigned/az-roadshow-oss.git
       siteName:
         value: devopscleweb
       hostingPlanName:
@@ -191,7 +191,7 @@ EXAMPLES = '''
         value: westus
       sku:
         value: Standard
-    template_link: 'https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json'
+    template_link: https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json
 
 # Create or update a template deployment based on an inline template and parameters
 - name: Create Azure Deploy

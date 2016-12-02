@@ -127,7 +127,7 @@ EXAMPLES = '''
     host_name: www1.example.com
     state: present
     minutes: 90
-    server_url: 'https://monitoring.example.com'
+    server_url: https://monitoring.example.com
     login_user: ansible
     login_password: pAsSwOrD
 
@@ -140,7 +140,7 @@ EXAMPLES = '''
       - Office
       - Dev
     state: present
-    server_url: 'https://monitoring.example.com'
+    server_url: https://monitoring.example.com
     login_user: ansible
     login_password: pAsSwOrD
 
@@ -153,7 +153,7 @@ EXAMPLES = '''
       - db1.example.com
     state: present
     collect_data: false
-    server_url: 'https://monitoring.example.com'
+    server_url: https://monitoring.example.com
     login_user: ansible
     login_password: pAsSwOrD
 
@@ -161,7 +161,7 @@ EXAMPLES = '''
 - zabbix_maintenance:
     name: Test1
     state: absent
-    server_url: 'https://monitoring.example.com'
+    server_url: https://monitoring.example.com
     login_user: ansible
     login_password: pAsSwOrD
 '''

@@ -76,7 +76,7 @@ options:
       - "URI to a terms of service document you agree to when using the
          ACME service at C(acme_directory)."
     required: false
-    default: 'https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf'
+    default: https://letsencrypt.org/documents/LE-SA-v1.1.1-August-1-2016.pdf
   challenge:
     description: The challenge to be performed.
     required: false

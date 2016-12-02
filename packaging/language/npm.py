@@ -102,7 +102,7 @@ description: Remove the globally package "coffee-script".
 description: Install "coffee-script" node.js package from custom registry.
 - npm:
     name: coffee-script
-    registry: 'http://registry.mysite.com'
+    registry: http://registry.mysite.com
 
 description: Install packages based on package.json.
 - npm:
