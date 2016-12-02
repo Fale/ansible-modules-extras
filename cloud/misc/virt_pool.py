@@ -59,7 +59,7 @@ options:
             - Specify if a given storage pool should be started automatically on system boot.
     uri:
         required: false
-        default: "qemu:///system"
+        default: qemu:///system
         description:
             - I(libvirt) connection uri.
     xml:

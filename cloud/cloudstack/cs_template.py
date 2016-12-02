@@ -206,7 +206,7 @@ EXAMPLES = '''
 - local_action:
     module: cs_template
     name: systemvm-vmware-4.5
-    url: "http://packages.shapeblue.com/systemvmtemplate/4.5/systemvm64template-4.5-vmware.ova"
+    url: http://packages.shapeblue.com/systemvmtemplate/4.5/systemvm64template-4.5-vmware.ova
     hypervisor: VMware
     format: OVA
     cross_zones: yes
@@ -347,7 +347,7 @@ url:
   description: Url to which the template is extracted to
   returned: success
   type: string
-  sample: "http://1.2.3.4/userdata/eb307f13-4aca-45e8-b157-a414a14e6b04.ova"
+  sample: http://1.2.3.4/userdata/eb307f13-4aca-45e8-b157-a414a14e6b04.ova
 tags:
   description: List of resource tags associated with the template.
   returned: success
