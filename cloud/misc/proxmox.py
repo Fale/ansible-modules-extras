@@ -174,7 +174,7 @@ requirements: [ "proxmoxer", "python >= 2.7", "requests" ]
 author: "Sergei Antipov @UnderGreen"
 '''
 
-EXAMPLES :  '''
+EXAMPLES = '''
 # Create new container with minimal options
 - proxmox:
     vmid: 100
