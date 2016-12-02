@@ -128,7 +128,7 @@ EXAMPLES = """
     msg: "{{ inventory_hostname }} completed"
     channel: "#ansible"
     username: "Ansible on {{ inventory_hostname }}"
-    icon_url: "http://www.example.com/some-image-file.png"
+    icon_url: http://www.example.com/some-image-file.png
     link_names: 0
     parse: 'none'
 

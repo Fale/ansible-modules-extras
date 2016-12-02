@@ -77,7 +77,7 @@ EXAMPLES = '''
     device: "Chrome"
     push_type: "link"
     title: "Ansible Documentation"
-    body: "http://docs.ansible.com/"
+    body: http://docs.ansible.com/
 
 # Sends a push notification to a channel
 - pushbullet: 

@@ -84,11 +84,11 @@ EXAMPLES = '''
 # Install/uninstall an msi-based package
 - name: Install msi-based package (Remote Desktop Connection Manager)
   win_package:
-    path: "https://download.microsoft.com/download/A/F/0/AF0071F3-B198-4A35-AA90-C68D103BDCCF/rdcman.msi"
+    path: https://download.microsoft.com/download/A/F/0/AF0071F3-B198-4A35-AA90-C68D103BDCCF/rdcman.msi
     product_id: "{0240359E-6A4C-4884-9E94-B397A02D893C}"
 - name: Uninstall msi-based package
   win_package:
-    path: "https://download.microsoft.com/download/A/F/0/AF0071F3-B198-4A35-AA90-C68D103BDCCF/rdcman.msi"
+    path: https://download.microsoft.com/download/A/F/0/AF0071F3-B198-4A35-AA90-C68D103BDCCF/rdcman.msi
     product_id: "{0240359E-6A4C-4884-9E94-B397A02D893C}"
     state: absent
 '''

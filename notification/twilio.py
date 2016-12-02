@@ -97,7 +97,7 @@ EXAMPLES = '''
     auth_token: "ACXXXXXXXXXXXXXXXXX"
     from_number: "+15552014545"
     to_number: "+15553035681"
-    media_url: "https://demo.twilio.com/logo.png"
+    media_url: https://demo.twilio.com/logo.png
   delegate_to: localhost
 '''
 

@@ -67,7 +67,7 @@ options:
     description:
       - URL for the message sender's icon.
     required: false
-    default: "https://www.ansible.com/favicon.ico"
+    default: https://www.ansible.com/favicon.ico
   icon_emoji:
     description:
       - Emoji for the message sender. The representation for the available emojis can be
@@ -124,7 +124,7 @@ EXAMPLES = """
     msg: "{{ inventory_hostname }} completed"
     channel: "#ansible"
     username: "Ansible on {{ inventory_hostname }}"
-    icon_url: "http://www.example.com/some-image-file.png"
+    icon_url: http://www.example.com/some-image-file.png
     link_names: 0
 
 - name: insert a color bar in front of the message for visibility purposes and use the default webhook icon and name configured in rocketchat

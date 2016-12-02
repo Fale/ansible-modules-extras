@@ -73,7 +73,7 @@ EXAMPLES = '''
     config: "{{ lookup('file', 'templates/test.xml') }}"
     name: test
     password: admin
-    url: "http://localhost:8080"
+    url: http://localhost:8080
     user: admin
 
 # Create a jenkins job using the token
@@ -81,7 +81,7 @@ EXAMPLES = '''
     config: "{{ lookup('template', 'templates/test.xml.j2') }}"
     name: test
     token: asdfasfasfasdfasdfadfasfasdfasdfc
-    url: "http://localhost:8080"
+    url: http://localhost:8080
     user: admin
 
 # Delete a jenkins job using basic authentication
@@ -89,7 +89,7 @@ EXAMPLES = '''
     name: test
     password: admin
     state: absent
-    url: "http://localhost:8080"
+    url: http://localhost:8080
     user: admin
 
 # Delete a jenkins job using the token
@@ -97,7 +97,7 @@ EXAMPLES = '''
     name: test
     token: asdfasfasfasdfasdfadfasfasdfasdfc
     state: absent
-    url: "http://localhost:8080"
+    url: http://localhost:8080
     user: admin
 
 # Disable a jenkins job using basic authentication
@@ -105,7 +105,7 @@ EXAMPLES = '''
     name: test
     password: admin
     enabled: false
-    url: "http://localhost:8080"
+    url: http://localhost:8080
     user: admin
 
 # Disable a jenkins job using the token
@@ -113,7 +113,7 @@ EXAMPLES = '''
     name: test
     token: asdfasfasfasdfasdfadfasfasdfasdfc
     enabled: false
-    url: "http://localhost:8080"
+    url: http://localhost:8080
     user: admin
 '''
 
