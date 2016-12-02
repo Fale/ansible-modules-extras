@@ -74,8 +74,10 @@ EXAMPLES = '''
     module: cs_project
     name: web
     tags:
-      - { key: admin, value: john }
-      - { key: foo,   value: bar }
+      - key: admin
+        value: john
+      - key: foo
+        value: bar
 
 # Rename a project
 - local_action:
