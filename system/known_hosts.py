@@ -62,7 +62,6 @@ author: "Matthew Vernon (@mcv21)"
 '''
 
 EXAMPLES = '''
-# Example using with_file to set the system known_hosts file
 - name: tell the host about our servers it might want to ssh to
   known_hosts:
     path: /etc/ssh/ssh_known_hosts
