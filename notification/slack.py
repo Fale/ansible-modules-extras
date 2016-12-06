@@ -116,52 +116,51 @@ options:
 
 EXAMPLES = """
 - name: Send notification message via Slack
-  local_action:
-    module: slack
+  slack:
     token: thetoken/generatedby/slack
-    msg: "{{ inventory_hostname }} completed"
+    msg: '{{ inventory_hostname }} completed'
+  delegate_to: localhost
 
 - name: Send notification message via Slack all options
-  local_action:
-    module: slack
+  slack:
     token: thetoken/generatedby/slack
-    msg: "{{ inventory_hostname }} completed"
-    channel: "#ansible"
-    username: "Ansible on {{ inventory_hostname }}"
+    msg: '{{ inventory_hostname }} completed'
+    channel: #ansible
+    username: 'Ansible on {{ inventory_hostname }}'
     icon_url: http://www.example.com/some-image-file.png
     link_names: 0
     parse: 'none'
+  delegate_to: localhost
 
-- name: insert a color bar in front of the message for visibility purposes and use the default webhook icon and name configured in Slack
+- name: Insert a color bar in front of the message for visibility purposes and use the default webhook icon and name configured in Slack
   slack:
     token: thetoken/generatedby/slack
-    msg: "{{ inventory_hostname }} is alive!"
+    msg: '{{ inventory_hostname }} is alive!'
     color: good
-    username: ""
-    icon_url: ""
+    username: ''
+    icon_url: ''
 
 - name: Use the attachments API
   slack:
     token: thetoken/generatedby/slack
     attachments:
-      - text: "Display my system load on host A and B"
-        color: "#ff00dd"
-        title: "System load"
+      - text: Display my system load on host A and B
+        color: #ff00dd
+        title: System load
         fields:
-          - title: "System A"
-            value: "load average: 0,74, 0,66, 0,63"
-            short: "true"
-          - title: "System B"
-            value: "load average: 5,16, 4,64, 2,43"
-            short: "true"
+          - title: System A
+            value: load average: 0,74, 0,66, 0,63
+            short: True
+          - title: System B
+            value: load average: 5,16, 4,64, 2,43
+            short: True
 
 - name: Send notification message via Slack (deprecated API using domain)
-  local_action:
-    module: slack
-    domain: future500.slack.com
+  slack:
+    domain: example.slack.com
     token: thetokengeneratedbyslack
-    msg: "{{ inventory_hostname }} completed"
-
+    msg: '{{ inventory_hostname }} completed'
+  delegate_to: localhost
 """
 
 OLD_SLACK_INCOMING_WEBHOOK = 'https://%s/services/hooks/incoming-webhook?token=%s'
