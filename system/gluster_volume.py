@@ -19,6 +19,10 @@
 # along with Ansible.  If not, see <http://www.gnu.org/licenses/>.
 
 
+ANSIBLE_METADATA = {'status': ['preview'],
+                    'supported_by': 'community',
+                    'version': '1.0'}
+
 DOCUMENTATION = """
 module: gluster_volume
 short_description: Manage GlusterFS volumes
@@ -522,4 +526,5 @@ def main():
 
     module.exit_json(changed=changed, ansible_facts=facts)
 
-main()
+if __name__ == '__main__':
+    main()

@@ -20,6 +20,10 @@
 #
 
 
+ANSIBLE_METADATA = {'status': ['stableinterface'],
+                    'supported_by': 'core',
+                    'version': '1.0'}
+
 DOCUMENTATION = '''
 ---
 module: getent
@@ -157,5 +161,5 @@ def main():
     module.fail_json(msg=msg)
 
 
-main()
-
+if __name__ == '__main__':
+    main()

@@ -18,6 +18,10 @@ You should have received a copy of the GNU General Public License
 along with this module.  If not, see <http://www.gnu.org/licenses/>.
 """
 
+ANSIBLE_METADATA = {'status': ['preview'],
+                    'supported_by': 'community',
+                    'version': '1.0'}
+
 DOCUMENTATION = '''
 ---
 module: known_hosts
@@ -305,4 +309,5 @@ def main():
     results = enforce_state(module,module.params)
     module.exit_json(**results)
 
-main()
+if __name__ == '__main__':
+    main()

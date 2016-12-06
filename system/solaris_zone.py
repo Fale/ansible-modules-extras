@@ -22,6 +22,10 @@ import os
 import platform
 import tempfile
 
+ANSIBLE_METADATA = {'status': ['preview'],
+                    'supported_by': 'community',
+                    'version': '1.0'}
+
 DOCUMENTATION = '''
 ---
 module: solaris_zone
@@ -477,4 +481,6 @@ def main():
     module.exit_json(changed=zone.changed, msg=', '.join(zone.msg))
 
 from ansible.module_utils.basic import *
-main()
+
+if __name__ == '__main__':
+    main()

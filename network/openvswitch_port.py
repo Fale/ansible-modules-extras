@@ -22,6 +22,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this software.  If not, see <http://www.gnu.org/licenses/>.
 
+ANSIBLE_METADATA = {'status': ['preview'],
+                    'supported_by': 'community',
+                    'version': '1.0'}
+
 DOCUMENTATION = '''
 ---
 module: openvswitch_port
@@ -159,7 +163,7 @@ class OVSPort(object):
         if rtc != 0:
             self.module.fail_json(msg=err)
 
-        return any(port.rstrip() == self.port for port in out.split('\n'))
+        return any(port.rstrip() == self.port for port in out.split('\n')) or self.port == self.bridge
 
     def set(self, set_opt):
         """ Set attributes on a port. """
@@ -285,4 +289,6 @@ def main():
 # import module snippets
 from ansible.module_utils.basic import *
 from ansible.module_utils.pycompat24 import get_exception
-main()
+
+if __name__ == '__main__':
+    main()

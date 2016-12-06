@@ -19,6 +19,10 @@
 # along with Ansible. If not, see <http://www.gnu.org/licenses/>.
 #
 
+ANSIBLE_METADATA = {'status': ['preview'],
+                    'supported_by': 'community',
+                    'version': '1.0'}
+
 DOCUMENTATION = '''
 ---
 module: zabbix_hostmacro
@@ -239,5 +243,6 @@ def main():
             host_macro_class_obj.update_host_macro(host_macro_obj, macro_name, macro_value)
 
 from ansible.module_utils.basic import *
-main()
 
+if __name__ == '__main__':
+    main()
